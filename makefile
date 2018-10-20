@@ -1,7 +1,5 @@
-all: sieve.o
-	gcc -g sieve.o
-sieve.o: sieve.c sieve.h
-	gcc -c sieve.c
+all: sieve.c sieve.h
+	gcc -g sieve.c -lm
 run:
 	./a.out
 clean:
